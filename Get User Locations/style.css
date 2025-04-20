@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00796b;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.02);
+}
+
+/* Styling for address details */
+.address-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #00796b;
+}
+
+.address-container:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-5px);
+}
+
+.address-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00796b;
+}
+
+.address-item {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: flex-start;
+    padding: 12px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.address-item span {
+    font-weight: 500;
+    text-align: left;
+    padding-left: 5px; /* Add padding for spacing */
+}
+
+.address-item i {
+    margin-bottom: 8px; /* Spacing between icon and text */
+    color: #00796b;
+}
+
+.reset-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.reset-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.reset-btn:active {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        padding: 20px 30px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .reset-btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .showDetails, .fullAddress, .formattedAddress {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .reset-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .showDetails, .fullAddress, .formattedAddress {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+}
